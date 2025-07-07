@@ -1,4 +1,4 @@
-# Sudoku-Suite
+# Sudoku-Solver
 A C++17-compatible header that provides useful functions which help with the solving, validation and generation of 9x9 Sudoku puzzles. 
 
 ## Contents
@@ -24,7 +24,7 @@ A C++17-compatible header that provides useful functions which help with the sol
 
 ## Documentation
 
-There are **three functions** that Sudoku-Suite provides the developer, along with **one class**. They are as follows:-
+There are **three functions** that Sudoku-Solver provides the developer, along with **one class**. They are as follows:-
 
 * `Grid`
     *  An object that represents a 9x9 Sudoku grid. The `Grid` object does not validate the grid in any way, i.e, it only holds the grid and values inside it.
@@ -51,8 +51,9 @@ There are **three functions** that Sudoku-Suite provides the developer, along wi
 #### Solving and validating Sudoku puzzle
 ```
 #include<iostream>
-#include"/path/to/src/sudoku_solver.h"
-#include"/path/to/src/sudoku_validator.h"
+#include "sudoku_solver.h"
+#include "sudoku_validator.h"
+#include "sudoku_validator.h"
 
 int main() {
     sudoku::Grid grid({{
@@ -81,7 +82,7 @@ int main() {
 #### Generating a Sudoku puzzle 
 ```
 #include<iostream>
-#include"/path/to/src/sudoku_generator.h"
+#include "sudoku_generator.h"
 
 int main() {
     sudoku::Grid grid = sudoku::generate_puzzle();
@@ -94,7 +95,7 @@ int main() {
 #### Initialising and reusing Grid objects 
 ```
 #include<iostream>
-#include"/path/to/src/grid.h"
+#include "grid.h"
 
 /* NOTE: If you only need to utilise the Grid object,
  * you can just import the "grid.h" header alone. */
@@ -166,7 +167,7 @@ File: `sample1.txt`
 
 ```
 #include<iostream>
-#include"/path/to/src/grid.h"
+#include "grid.h"
 
 /* NOTE: If you only need to utilise the Grid object,
  * you can just import the "grid.h" header alone. */
@@ -186,7 +187,7 @@ int main() {
 #### Operations on Grid objects 
 ```
 #include<iostream>
-#include"/path/to/src/grid.h"
+#include "grid.h"
 
 /* NOTE: If you only need to utilise the Grid object,
  * you can just import the "grid.h" header alone. */
