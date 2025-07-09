@@ -244,12 +244,7 @@ This particular algorithm employs the use of backtracking, one of the more commo
 8. Stop.
 
 ## Running Tests
-* To run the tests, enter `c++ --std=c++17 tests/test_sudoku_suite.cpp` and then run the executable produced.
-
-## Acknowledgements
-
-* Shriram R - Idea Inspiration
-* Aravind B - Puzzle Display Design Ideas
+* To run the tests, enter `c++ --std=c++17 tests/test_sudoku_solver.cpp` and then run the executable produced.
 
 ## Tools
 * Vim Editor
